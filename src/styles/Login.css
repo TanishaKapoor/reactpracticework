@@ -1,0 +1,14 @@
+.heading{
+    font-weight: bolder;
+    margin-bottom:3px;
+    margin-right: 10px;
+}
+.margin-position{
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+.form-align{
+    margin-top: 40px;
+    width:fit-content;
+    display: inline-block;
+}
