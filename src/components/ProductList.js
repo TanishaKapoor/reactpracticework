@@ -36,6 +36,7 @@ class ProductList extends Component{
     nextPath(isloggedIn,path,product){
         if(isloggedIn){
             this.props.addProductToCart(product);
+            window.alert("Product added to cart")
             this.props.history.push(path);
         }
         else{
@@ -61,7 +62,6 @@ class ProductList extends Component{
                 offset:0,
                 forcePage:0
             })
-            console.log(this.state.forcePage);
         }
 
     sortedList(){
@@ -84,19 +84,15 @@ class ProductList extends Component{
             <div>
             <h1>MOBILES LIST</h1>
             <div className="search_bar">
-            <input type="text" style={{marginRight:'10px'}} placeholder="Search by name" onChange={event=>this.setStateOfFilters(event)}></input>
+            <input className="searchbox" type="text" placeholder="Search by name" onChange={event=>this.setStateOfFilters(event)}></input>
             <Button variant="success" onClick={()=>this.setSort()}>Sort Price
             <img  alt="" src={sort}/>
             </Button>
             </div>
-            {/* <button onClick={()=>this.setSort()}>Sort</button> */}
             {this.filteredList().length >0?
                         <div>
                         {
-                        // (this.state.sort === false? 
-                        // this.props.products.sort((a, b) => (a.price) - (b.price)):this.props.products.sort((a, b) => (b.price) - (a.price))).
-                        // filter(product => product.deviceName.toLocaleLowerCase().includes(this.state.filter.toLocaleLowerCase()))
-                         this.filteredList()
+                        this.filteredList()
                         .map(product=>{
                             
                            return(
@@ -104,11 +100,6 @@ class ProductList extends Component{
                                 <Card.Img variant="top" src={require(`../images/${product.img}`)} />
                                 <Card.Body>
                                     <Card.Title>{product.deviceName.toUpperCase()}</Card.Title>
-                                    {/* <Card.Text>                           
-                                           
-                                                <span>Device Name:</span>
-                                                <span>{product.deviceName}</span>
-                                    </Card.Text> */}
                                     <Card.Text className="text-align">
                                                 <span className="heading-text">Device Camera :</span>
                                                 <span>{product.camera}</span>

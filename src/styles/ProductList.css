@@ -43,6 +43,12 @@
     width:200px;
     height:200px;
     margin-top:10px;
+    object-fit: contain;
+  }
+  .searchbox{
+    background: transparent;
+    font-weight: bolder;
+    margin-right: 10px;
   }
   .card{
     border:2px solid #e478b3;

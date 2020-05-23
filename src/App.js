@@ -24,40 +24,23 @@ function App(props) {
     <MyProvider>
     <MyContext.Consumer>
       {context=>(
-    <div>
-    {/* <div className="header">
-      <div className="col-md-6">
-        Mob Online
-      </div>
-      <div>
-        <Link to={{pathname:'/'}}>Products</Link>
-      </div>
-      <div>
-        <Link to={{pathname:'/cart_detail'}}>See CartDetail</Link>
-      </div>
-      <div className="col-md-6">
-        <Link to={{pathname:'/login'}}>Login Trying</Link>
-      </div>
-    </div> */}
+    <div className="background-pic">
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Navbar.Brand>MOBILE APP</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
        <Button variant="outline-primary" className="margin-adjust" onClick={()=>productHomePage()}>
-         {/* <Link className="font-change"  to={{pathname:'/'}}>PRODUCTS LIST</Link> */}
          HOME
          </Button>
        {
        (context.state.isloggedIn)?<></>:
        <Button variant="outline-primary" className="margin-adjust" onClick={()=>loginPage()}>LOGIN
-           {/* <Link className="font-change" to={{pathname:'/login'}}> LOGIN</Link> */}
       </Button>
        }
        {
        (context.state.isloggedIn)?
         <Button variant="outline-primary" className="margin-adjust" onClick={()=>cartPage()}>CART
-            {/* <Link className="font-change" to={{pathname:'/login'}}> LOGIN</Link> */}
         </Button>:<></>
       }
         
@@ -70,7 +53,7 @@ function App(props) {
     </Navbar.Collapse>
   </Navbar>
     
-    <div className="App">
+    <div className="App" style={{'height':'1000px'}}>
       <Switch>
         <Route exact path='/' component={ProductList}/>
         <Route path='/product_detail' component={ProductDetail}/>

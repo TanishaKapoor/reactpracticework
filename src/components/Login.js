@@ -36,23 +36,6 @@ class Login extends Component{
             <MyContext.Consumer>
                 {context=>(
                     <>
-                        {/* <h1>LOGIN PAGE</h1>
-                        <div className="margin-position">
-                             <div className="heading"> Name:</div>
-                            <div><input type="text" value={this.state.name} name="name" onChange={this.handleFormChange}></input></div>
-                        </div>
-                        <div className="margin-position">
-                           <div className="heading">Password:</div> 
-                           <div><input type="password" value={this.state.password} name="password" onChange={this.handleFormChange}></input></div> 
-                        </div>
-                        <div className="col-md-12">
-                            <span className="col-md-6">
-                            <Button variant="outline-success"  disabled={!this.state.name || !this.state.password} onClick={()=>{context.verifyCredentials(this.verifyUser())}}>LOGIN</Button>
-                            </span>
-                            <span className="col-md-6">
-                            <Button variant="outline-danger" disabled={!this.state.name && !this.state.password}  onClick={()=>{this.reset()}}>RESET</Button>
-                            </span>
-                        </div> */}
                         <h1>LOGIN</h1>
                          <Form className="form-align">
                                 <Form.Control className="margin-position"

@@ -30,7 +30,7 @@ function ProductDetail (props){
             {context=>(
                 <>
                     <div className="align-goback">
-                        <Button variant="outline-danger" onClick={()=>goBack()}> Go Back</Button>
+                        <Button variant="outline-danger" onClick={()=>goBack()}> Go Back </Button>
                     </div>
                     <h1 style={{marginBottom:'60px'}}>MOBILE DETAIL</h1>
                     {productDetail?
@@ -41,11 +41,6 @@ function ProductDetail (props){
                   <Card style={{ width: '18rem', display:'inline-block' }} key={productDetail.id}>
                   <Card.Body>
                       <Card.Title>{productDetail.deviceName.toUpperCase()}</Card.Title>
-                      {/* <Card.Text className="text-align">                           
-                             
-                                  <span className="heading-text">Device Name:</span>
-                                  <span>{productDetail.deviceName}</span>
-                      </Card.Text> */}
                       <Card.Text className="text-align">
                                   <span className="heading-text">Device Camera :</span>
                                   <span>{productDetail.camera}</span>
@@ -89,18 +84,6 @@ function ProductDetail (props){
                   </div>
                 }
                 </>
-                    // <div>
-                    // <h1>Product Detail</h1>
-                    // <div>
-                    //     <span>
-                    //         Device Name:
-                    //     </span>
-                    //     <span>
-                    //         {productDetail.deviceName}
-                    //     </span>
-                    // </div>
-                    // <button onClick={()=>checkUser(context.state.isloggedIn,productDetail)}>Add To Cart</button>
-                    // </div>
             )}
         </MyContext.Consumer>
   

@@ -30,7 +30,8 @@ class MyProvider extends Component{
                         this.setState({
                             isloggedIn:false
                         })
-                        this.props.history.push('/');                    }
+                        this.props.history.push('/');           
+                    }
                 }}
             >
                 {this.props.children}

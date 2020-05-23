@@ -41,7 +41,7 @@ class CartDetail extends Component{
             <>
             {this.props.cartProducts.length>0?
             (<div>
-            <div>CART DETAILS</div>
+            <div className="cart-heading">CART DETAILS</div>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -60,7 +60,7 @@ class CartDetail extends Component{
                         <td>
                             <img className="image-size" alt="device" src={require(`../images/${cart.img}`)}/>
                         </td>
-                        <td>{cart.deviceName}</td>
+                        <td>{cart.deviceName.toUpperCase()}</td>
                         <td>{cart.camera}</td>
                         <td>
                             {cart.quantity}
@@ -89,15 +89,15 @@ class CartDetail extends Component{
                 <Modal visible={this.state.isVisible} width="400" height="400" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <div>
                         <div>
-                            <div style={{color:'red', fontWeight:'bolder'}}>
+                            <div style={{color:'red', fontWeight:'bolder',marginTop:'40px'}}>
                                 ORDER PLACED FOR ORDER ID<br></br>
-                                {Math.floor(Math.random() * 100) + 1}
+                                <div>{Math.floor(Math.random() * 100) + 1}</div>
                             </div>
                             <div>
                                 <img alt="cart empty" src={order_placed}></img>
                             </div>
                         </div>
-                        <a href="javascript:void(0);" onClick={() => this.closeModal()}>Close</a>
+                        <Button variant="outline-danger" onClick={() => this.closeModal()}>Close</Button>
                     </div>
                 </Modal>
             <div style={this.state.isVisible?{display:'none'}:{display:'inline'}}>

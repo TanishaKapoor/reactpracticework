@@ -4,16 +4,6 @@ function cartProducts(state=[],action){
     let cartProducts;
     switch(action.type){
         case ADD_PRODUCT_TO_CART:
-            // const data= state.find(product=>product.id === action.payload.id);
-            // if(data){
-            //     data.quantity++;
-            //     cartProducts=state;
-            // }
-            // else{
-            //      cartProducts= [...state,action.payload];
-            // }
-            // debugger;
-            // return cartProducts;
             const data = state.find(product=>product.id === action.payload.id);
             if(data){
                 cartProducts= Object.assign([], state.map(item => {

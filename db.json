@@ -7,7 +7,7 @@
             "camera":"12 MP",
             "colors":"Black, Golden",
             "screenSize":"6.61 inches",
-            "processor":"Hexa Core (2.65 GHz, Dual core, Lightning + 1.8 GHz, Quad core, Thunder)",
+            "processor":"Hexa Core",
             "OS":"iOS",
             "RAM":"4 GB",
             "storage":"64,128, 256 GB",
@@ -25,21 +25,21 @@
             "RAM":"6 GB",
             "storage":"128 GB",
             "price":579,
-            "processor":"2.2GHz octa-core Qualcomm Snapdragon 730G"
+            "processor":"Octa-core"
 
         },
         {
             "id":3,
-            "img":"mi_note10.jpg",
-            "deviceName":"MI Note 10",
+            "img":"vivog1.jpg",
+            "deviceName":"VIVO G1 5G",
             "camera":"32 MP",
             "colors":"BLACK ,  GREY , GREEN",
-            "screenSize":"screenSize",
+            "screenSize":"6.44 inch",
             "OS":"Andriod",
-            "RAM":"4GB",
-            "processor":"2.2GHz octa-core Qualcomm Snapdragon 730G",
-            "storage":"storage",
-            "price":579
+            "RAM":"8 GB",
+            "processor":"Samsung Exynos",
+            "storage":"128 GB",
+            "price":394
 
         },
         {
@@ -50,7 +50,7 @@
             "colors":"BLACK ,  GREY , GREEN",
             "screenSize":"6.4 inches",
             "OS":"Andriod",
-            "processor":"Samsung Exynos 9 Octa 9820",
+            "processor":"Samsung Exynos",
             "RAM":"8 GB",
             "storage":"128 GB ",
             "price":947
@@ -64,7 +64,7 @@
             "colors":"BLACK ,  GREY , GREEN",
             "screenSize":"6.2 inches",
             "OS":"Andriod",
-            "processor":"Octa core (2.84 GHz, Single core, Kryo 485 + 2.42 GHz, Tri core, Kryo 485 + 1.8 GHz, Quad core, Kryo 485)",
+            "processor":"Octa core ",
             "RAM":"6 GB",
             "storage":"256 GB",
             "price":728
@@ -78,7 +78,7 @@
             "colors":"BLACK ,  GREY , GREEN",
             "screenSize":"5.8 inches",
             "OS":"iOS",
-            "processor":"Hexa Core (2.65 GHz, Dual core, Lightning + 1.8 GHz, Quad core, Thunder)",
+            "processor":"Hexa Core",
             "RAM":"4 GB",
             "storage":"64 , 256 , 512 GB",
             "price":1269
@@ -86,58 +86,58 @@
         },
         {
             "id":7,
-            "img":"mi_note10.jpg",
-            "deviceName":"mi note 10",
+            "img":"lenovok8.jpg",
+            "deviceName":"Lenovo k8 note",
             "camera":"32 MP",
-            "colors":"BLACK ,  GREY , GREEN",
-            "screenSize":"screenSize",
-            "processor":"",        
+            "colors":"BLACK",
+            "screenSize":"5.5 inches",
+            "processor":"Deca Core",        
             "OS":"Andriod",
-            "RAM":"4GB",
-            "storage":"storage",
-            "price":579
+            "RAM":"4 GB",
+            "storage":"32 , 64 GB",
+            "price":118
 
         },
         {
             "id":8,
-            "img":"mi_note10.jpg",
-            "deviceName":"mi note 10",
-            "camera":"32 MP",
-            "colors":"BLACK ,  GREY , GREEN",
-            "screenSize":"screenSize",
+            "img":"honor7x.jpg",
+            "deviceName":"HONOR 7 X",
+            "camera":"16 MP",
+            "colors":"BLACK ,  GREY , BLUE , GREEN",
+            "screenSize":"5.93 inches",
             "OS":"Andriod",
-            "processor":"",
-            "RAM":"4GB",
-            "storage":"storage",
-            "price":579
+            "processor":"Octa Core",
+            "RAM":"4 GB",
+            "storage":"32 GB",
+            "price":157
 
         },
         {
             "id":9,
-            "img":"samsung_galaxyS10.jpg",
-            "deviceName":"samsung galaxy 10",
-            "camera":"10 MP",
-            "colors":"BLACK ,  GREY , GREEN",
-            "screenSize":"screenSize",
-            "processor":"",
+            "img":"oneplus7tpro.jpg",
+            "deviceName":"one plus 7T pro",
+            "camera":"16 MP",
+            "colors":"Haze Blue, Black",
+            "screenSize":"6.67 inches",
+            "processor":"Octa core",
             "OS":"Andriod",
-            "RAM":"4GB",
-            "storage":"storage",
-            "price":1900
+            "RAM":"8 GB",
+            "storage":"256 GB",
+            "price":631
 
         },
         {
             "id":10,
-            "img":"sony_experia2.jpg",
-            "deviceName":"sony experia 2",
+            "img":"redmi9pro.jpg",
+            "deviceName":"redmi note 9 pro",
             "camera":"16 MP",
             "colors":"BLACK ,  GREY , GREEN",
-            "screenSize":"screenSize",
-            "processor":"",
+            "screenSize":"6.67 inches",
+            "processor":"Qualcomm Snapdragon",
             "OS":"Andriod",
-            "RAM":"4GB",
-            "storage":"storage",
-            "price":8700
+            "RAM":"4 GB",
+            "storage":"64 GB",
+            "price":197
 
         }
       ]
