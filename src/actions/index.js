@@ -13,7 +13,7 @@ export function initialiseProductList(response){
         payload:response
     };
 
-    return action;
+    return action;  
 }
 
 export function addProductToCart(product){

@@ -91,6 +91,6 @@ function ProductDetail (props){
 };
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ addProductToCart }, dispatch);
+    return bindActionCreators({ addProductToCart}, dispatch);
 }
 export default withRouter(connect(null,mapDispatchToProps)(ProductDetail));
